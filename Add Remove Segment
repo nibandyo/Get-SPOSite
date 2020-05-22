@@ -1,0 +1,34 @@
+Adding new parameter 'AddInformationSegment' and 'RemoveInformationSegment'.
+It provides the capability to add segment or remove segment from a site. 
+This parameter is only applicable for tenants who have enabled M365 Information barriers capability. For other tenants, this property will be blank. 
+
+-AddInformationSegment
+This parameter sets the information segments associated to the site.
+
+[!NOTE] This parameter is available only in SharePoint Online Management Shell Version 16.0.19927.12000 or later.
+
+Type: Collection of GUIDs
+Position: Named
+Required: False
+Position: Named
+Default value: None
+
+Example1: Set-SPOSite [-Identity] -AddInformationSegment [a17efb47-e3c9-4d85-a188-1cd59c83de32]
+
+In example1, it adds the InformationSegment 'a17efb47-e3c9-4d85-a188-1cd59c83de32' to the site. 
+
+
+-RemoveInformationSegment
+This parameter removes the information segment associated to the site.
+
+[!NOTE] This parameter is available only in SharePoint Online Management Shell Version 16.0.19927.12000 or later.
+
+Type: GUID
+Position: Named
+Required: False
+Position: Named
+Default value: None
+
+Example1: Set-SPOSite [-Identity] -RemoveInformationSegment [a17efb47-e3c9-4d85-a188-1cd59c83de32]
+
+In example1, it remove the InformationSegment 'a17efb47-e3c9-4d85-a188-1cd59c83de32' from the site. 
