@@ -29,6 +29,6 @@ Required: False
 Position: Named
 Default value: None
 
-Example1: Set-SPOSite [-Identity] -RemoveInformationSegment [a17efb47-e3c9-4d85-a188-1cd59c83de32]
+Example2: Set-SPOSite [-Identity] -RemoveInformationSegment [a17efb47-e3c9-4d85-a188-1cd59c83de32]
 
-In example1, it remove the InformationSegment 'a17efb47-e3c9-4d85-a188-1cd59c83de32' from the site. 
+In example2, it remove the InformationSegment 'a17efb47-e3c9-4d85-a188-1cd59c83de32' from the site. 
