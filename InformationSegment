@@ -1,0 +1,18 @@
+Adding new parameter 'InformationSegment' to a site. It provides the segments that are associated to the site. 
+This parameter is only applicable for tenants who have enabled M365 Information barriers capability. For other tenants, this property will be blank. 
+
+Example: Get-SPOSite [-Identity] | Select InformationSegment
+
+In the example, it returns the InformationSegments associated to the site.
+
+InformationSegment
+This parameter provides the information segments associated with the site. 
+
+[!NOTE] This parameter is available only in SharePoint Online Management Shell Version 16.0.19927.12000 or later.
+
+Type: Collection of GUIDs
+Position: Named
+Required: False
+Position: Named
+Default value: None
+
